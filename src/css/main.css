@@ -8,8 +8,9 @@
 
 .titulo-principal {
     margin: 20px 0;
-    font-size: 35px;
+    font-size: 2em;
     font-weight: 700;
+    margin-bottom: 1em;
 }
 
 .banner {
