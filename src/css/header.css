@@ -1,0 +1,30 @@
+/* header.css */
+
+header {
+    background-color: #bbb;
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav li a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
