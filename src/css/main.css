@@ -13,6 +13,18 @@
     margin-bottom: 1em;
 }
 
+.principal {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
 .banner {
     width: 100%;
 }
@@ -36,7 +48,7 @@
 }
 
 .imagemBeneficios {
-    width: 50%;
+    width: 60%;
 }
 
 /* produtos */
