@@ -108,4 +108,9 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-image');
 
+    // Tarefas para limpeza
+    grunt.registerTask('limpar-tmp', ['clean:tmp']);
+    grunt.registerTask('limpar-public', ['clean:public']);
+    grunt.registerTask('limpar-images', ['clean:images']);
+    grunt.registerTask('limpar-tudo', ['limpar-public', 'limpar-tmp']);
 };
