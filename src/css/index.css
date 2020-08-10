@@ -81,12 +81,9 @@
 
 .imagem-beneficios {
 	width: 60%;
-	opacity: 0.45;
-	transition: 400ms;
-}
-
-.imagem-beneficios:hover {
-	opacity: 1;
+	/* opacity: 0.45; */
+	/* transition: 400ms; */
+	/* box-shadow: 10px 10px 30px 20px #000; */
 }
 
 .video {
