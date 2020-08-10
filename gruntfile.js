@@ -8,6 +8,10 @@ module.exports = function(grunt){
                 src: ['.tmp/**/*']
             },
 
+            public: {
+                src: ['public/**/*']
+            },
+
             images: {
                 src: ['.tmp/images/**/*']
             },
