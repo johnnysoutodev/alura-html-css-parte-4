@@ -95,6 +95,40 @@ module.exports = function(grunt){
                     dest: '.tmp/images/'
                 }]
             }
+        },
+
+        watch: {
+            scripts: {
+                files: 'src/js/*.js',
+                tasks: ['codificando'],
+                options: {
+                    event: ['added', 'changed', 'deleted'],
+                }
+            },
+
+            styles: {
+                files: 'src/css/*.css',
+                tasks: ['estilizando'],
+                options: {
+                    event: ['added', 'changed', 'deleted'],
+                }
+            },
+
+            html: {
+                files: 'src/*.html',
+                tasks: ['copy:html'],
+                options: {
+                    event: ['added', 'changed', 'deleted'],
+                }
+            },
+
+            images: {
+                files: 'src/images/*.{png,jpg,gif,svg}',
+                tasks: ['compactando-images'],
+                options: {
+                    event: ['added', 'changed', 'deleted']
+                }
+            }
         }
 
     });
@@ -106,6 +140,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-image');
 
     // Tarefas para limpeza
@@ -120,4 +155,6 @@ module.exports = function(grunt){
     // Tarefas para trabalhar no projeto
     grunt.registerTask('codificando', ['concat:js','uglify', 'copy:js']);
     grunt.registerTask('estilizando', ['concat:css','cssmin', 'copy:css']);
+
+    grunt.registerTask('default', ['watch']);
 };
