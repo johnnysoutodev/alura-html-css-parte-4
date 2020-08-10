@@ -16,6 +16,11 @@ module.exports = function(grunt){
 
         concat: {
 
+            js: {
+                src: ['src/js/**/*'],
+                dest: '.tmp/js/scripts.min.js'
+            },
+
             css: {
                 src: ['src/css/reset.css', 'src/css/global.css', 'src/css/index.css', 'src/css/produtos.css', 'src/css/contato.css', 'src/css/mediaqueries.css'],
                 dest: '.tmp/css/styles.min.css'
