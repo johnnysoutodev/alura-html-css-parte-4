@@ -29,6 +29,11 @@
     width: 100%;
 }
 
+.utensilios {
+    width: 150px;
+    float: left;
+}
+
 /* beneficios */
 
 .beneficios {
