@@ -2,6 +2,14 @@ module.exports = function(grunt){
 
     grunt.initConfig({
 
+        clean: {
+
+            images: {
+                src: ['.tmp/images/**/*']
+            }
+
+        },
+
         image: {
             
             dynamic: {
