@@ -1,7 +1,7 @@
 /* mediaqueries.css */
 
 @media screen AND (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
         width: auto;
     }
 
@@ -17,15 +17,18 @@
         width: 100%;
     }
 
-    .video, .lista-beneficios, .imagem-beneficios {
-        padding: 5px 10px;
+    .produtos {
+        padding: 0;
+        margin: 0;
     }
 
-    .principal > img, .principal > p {
-        padding: 5px 10px;
-    }
-
-    .principal > p {
-        text-align: justify;
+    .produtos li {
+        display: inline;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 10px;
+        border: 2px solid #000;
+        vertical-align: middle;
     }
 }
