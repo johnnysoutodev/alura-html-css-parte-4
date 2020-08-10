@@ -39,6 +39,15 @@ module.exports = function(grunt){
             }
         },
 
+        uglify: {
+            js: {
+                files: [{
+                    src: '.tmp/js/scripts.min.js',
+                    dest: '.tmp/js/scripts.min.js'
+                }]
+            }
+        },
+
         image: {
             
             dynamic: {
