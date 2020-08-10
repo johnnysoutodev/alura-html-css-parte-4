@@ -6,8 +6,20 @@ module.exports = function(grunt){
 
             images: {
                 src: ['.tmp/images/**/*']
+            },
+
+            css: {
+                src: ['.tmp/css/**/*']
             }
 
+        },
+
+        concat: {
+
+            css: {
+                src: ['src/css/reset.css', 'src/css/global.css', 'src/css/index.css', 'src/css/produtos.css', 'src/css/contato.css', 'src/css/mediaqueries.css'],
+                dest: '.tmp/css/styles.min.css'
+            }
         },
 
         image: {
