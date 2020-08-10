@@ -1,7 +1,7 @@
 /* mediaqueries.css */
 
 @media screen AND (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li {
         width: auto;
     }
 
@@ -28,12 +28,8 @@
 
     .produtos li {
         display: inline-block;
-        width: auto;
-        text-align: center;
         box-sizing: border-box;
         padding: 0.5em 0.5em;
         margin: 1em 1em;
-        border: 2px solid #000;
-        vertical-align: middle;
     }
 }
