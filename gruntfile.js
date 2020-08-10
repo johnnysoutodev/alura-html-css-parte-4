@@ -4,6 +4,10 @@ module.exports = function(grunt){
 
         clean: {
 
+            tmp: {
+                src: ['.tmp/**/*']
+            },
+
             images: {
                 src: ['.tmp/images/**/*']
             },
