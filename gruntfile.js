@@ -155,6 +155,6 @@ module.exports = function(grunt){
     // Tarefas para trabalhar no projeto
     grunt.registerTask('codificando', ['concat:js','uglify', 'copy:js']);
     grunt.registerTask('estilizando', ['concat:css','cssmin', 'copy:css']);
-
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('publicando-projeto', ['limpar-tudo','compactando-images','codificando','estilizando','copy:html']);
 };
