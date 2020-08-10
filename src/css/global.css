@@ -21,6 +21,11 @@ footer {
 	margin: 0 auto;
 }
 
+.linha {
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* Navegação */
 
 nav {
