@@ -113,4 +113,7 @@ module.exports = function(grunt){
     grunt.registerTask('limpar-public', ['clean:public']);
     grunt.registerTask('limpar-images', ['clean:images']);
     grunt.registerTask('limpar-tudo', ['limpar-public', 'limpar-tmp']);
+
+    // Tarafa de compactação de imagens
+    grunt.registerTask('compactando-images', ['clean:images', 'image:dynamic', 'copy:images']);
 };
