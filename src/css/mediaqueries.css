@@ -1,7 +1,7 @@
 /* mediaqueries.css */
 
 @media screen AND (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li, .linha {
         width: auto;
     }
 
@@ -29,5 +29,25 @@
     .produtos li {
         padding: 0.5em 0.5em;
         margin: 1em 1em;
+    }
+
+    form, table {
+        margin-left: 1.1em;
+    }
+
+    form label {
+        font-size: 1em;
+    }
+
+    form legend {
+        font-size: 1.2em;
+    }
+
+    form label.checkbox {
+        font-size: 0.8em;
+    }
+
+    form input.enviar {
+        width: 50%;
     }
 }
