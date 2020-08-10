@@ -27,8 +27,6 @@
     }
 
     .produtos li {
-        display: inline-block;
-        box-sizing: border-box;
         padding: 0.5em 0.5em;
         margin: 1em 1em;
     }
