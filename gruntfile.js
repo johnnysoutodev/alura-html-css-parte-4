@@ -22,6 +22,14 @@ module.exports = function(grunt){
             }
         },
 
+        cssmin: {
+            css: {
+                files: {
+                    '.tmp/css/styles.min.css': '.tmp/css/styles.min.css'
+                }
+            }
+        },
+
         image: {
             
             dynamic: {
