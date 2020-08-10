@@ -9,6 +9,7 @@
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
+	color: rgba(0,0,0,0.3);
 }
 
 .principal {
@@ -80,6 +81,12 @@
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 0.45;
+	transition: 400ms;
+}
+
+.imagem-beneficios:hover {
+	opacity: 1;
 }
 
 .video {
