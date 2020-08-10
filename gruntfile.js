@@ -116,4 +116,8 @@ module.exports = function(grunt){
 
     // Tarafa de compactação de imagens
     grunt.registerTask('compactando-images', ['clean:images', 'image:dynamic', 'copy:images']);
+
+    // Tarefas para trabalhar no projeto
+    grunt.registerTask('codificando', ['concat:js','uglify', 'copy:js']);
+    grunt.registerTask('estilizando', ['concat:css','cssmin', 'copy:css']);
 };
