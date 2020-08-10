@@ -27,16 +27,16 @@
 }
 
 .produtos li:hover h2 {
-	font-size: 34px;
+	font-size: 2.2em;
 }
 
 .produtos h2 {
-	font-size: 30px;
+	font-size: 1.8em;
 	font-weight: bold;
 }
 
 .produto-descricao {
-	font-size: 18px;
+	font-size: 1.2em;
 }
 
 .produto-preco {
