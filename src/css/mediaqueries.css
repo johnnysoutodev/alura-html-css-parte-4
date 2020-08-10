@@ -1,0 +1,31 @@
+/* mediaqueries.css */
+
+@media screen AND (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .video, .lista-beneficios, .imagem-beneficios {
+        padding: 5px 10px;
+    }
+
+    .principal > img, .principal > p {
+        padding: 5px 10px;
+    }
+
+    .principal > p {
+        text-align: justify;
+    }
+}
