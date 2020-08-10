@@ -22,6 +22,35 @@ module.exports = function(grunt){
 
         },
 
+        copy: {
+            html: {
+                expand: true,
+                cwd: 'src',
+                src: ['*'],
+                dest: 'public',
+                filter: 'isFile'
+            },
+
+            css:{
+                expand: false,
+                src: '.tmp/css/styles.min.css',
+                dest: 'public/css/styles.min.css'
+            },
+
+            js: {
+                expand: false,
+                src: '.tmp/js/scripts.min.js',
+                dest: 'public/js/scripts.min.js'
+            },
+
+            images: {
+                expand: true,
+                cwd: '.tmp/images',
+                src: '*.{png,jpg,gif,svg}',
+                dest: 'public/images/'
+            }
+        },
+
         concat: {
 
             js: {
